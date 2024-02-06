@@ -10,7 +10,7 @@ module.exports = {
     // TODO: update this, use old pool for now
     // WETH-USDT 500
     wNativeStablePoolAddress: "0x58B172f9AD87d6cd3614811FBfcb492f7e1271ec",
-    stableIsToken0: true,
+    stableIsToken0: false,
     factoryAddress: "0x591F72F4a2d2C2678B709a38E7ff0a1c86099a8d",
     startBlock: 3423645,
     stableCoins: [
