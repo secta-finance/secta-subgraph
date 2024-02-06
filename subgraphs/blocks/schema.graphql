@@ -1,5 +1,5 @@
 """
-Linea chain blocks
+Linea(chain*) blocks
 """
 type Block @entity {
   "ID (hash)"
