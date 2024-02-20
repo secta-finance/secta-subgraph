@@ -11,6 +11,6 @@
     "codegen": "graph codegen subgraph.yaml",
     "build": "graph build subgraph.yaml",
     "deploy": "graph deploy --node https://graph-deploy.goerli.linea.build --ipfs https://graph-ipfs.goerli.linea.build sectafi/dex-lite-goerli subgraph.yaml",
-    "pdeploy": "graph deploy --node https://graph-deploy.linea.build --ipfs https://graph-ipfs.linea.build sectafi/dex-lite subgraph.yaml"
+    "deploy:linea": "graph deploy --studio secta-linea-exchange-v3-lite"
   }
 }

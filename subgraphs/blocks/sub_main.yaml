@@ -6,7 +6,7 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: USDC-ERC20
-    network: linea-mainnet
+    network: linea
     source:
       address: "0x176211869cA2b568f2A7D4EE941E073a821EE1ff"
       abi: Token

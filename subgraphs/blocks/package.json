@@ -11,6 +11,7 @@
     "build:testnet": "graph build subgraph.yaml",
     "build:mainnet": "graph build sub_main.yaml",
     "deploy:testnet": "graph deploy --node https://graph-deploy.goerli.linea.build --ipfs https://graph-ipfs.goerli.linea.build sectafi/blocks-goerli subgraph.yaml",
-    "deploy:mainnet": "graph deploy --node https://graph-deploy.linea.build --ipfs https://graph-ipfs.linea.build sectafi/blocks sub_main.yaml"
+    "deploy:mainnet": "graph deploy --node https://graph-deploy.linea.build --ipfs https://graph-ipfs.linea.build sectafi/blocks sub_main.yaml",
+    "deploy:linea": "graph deploy --studio secta-linea-blocks sub_main.yaml"
   }
 }
