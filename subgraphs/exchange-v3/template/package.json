@@ -6,6 +6,7 @@
   "author": "SectaFi",
   "license": "GPL-3.0-or-later",
   "scripts": {
+    "template": "mustache ../../../config/$NETWORK.js subgraph.template.yaml > subgraph.yaml && mustache ../../../config/$NETWORK.js utils/constants.template.ts > utils/constants.ts && mustache ../../../config/$NETWORK.js utils/pricing.template.ts > utils/pricing.ts",
     "template:test": "mustache ../../../config/$NETWORK.js subgraph.template.yaml > subgraph.yaml && mustache ../../../config/$NETWORK.js utils/constants.template.ts > utils/constants.ts && mustache ../../../config/$NETWORK.js utils/pricing.template.ts > utils/pricing.ts",
     "template:main": "mustache ../../../config/$NETWORK.js subgraph.template.yaml > sub_main.yaml && mustache ../../../config/$NETWORK.js utils/constants.template.ts > utils/constants.ts && mustache ../../../config/$NETWORK.js utils/pricing.template.ts > utils/pricing.ts",
     "auth": "graph auth --product hosted-service SUBGRAPH_KEY",
@@ -14,6 +15,7 @@
     "deploy:testnet": "graph deploy --node https://graph-deploy.goerli.linea.build --ipfs https://graph-ipfs.goerli.linea.build sectafi/dex-goerli subgraph.yaml",
     "codegen:mainnet": "graph codegen sub_main.yaml",
     "build:mainnet": "graph build sub_main.yaml",
-    "deploy:mainnet": "graph deploy --node https://graph-deploy.linea.build --ipfs https://graph-ipfs.linea.build sectafi/dex sub_main.yaml"
+    "deploy:mainnet": "graph deploy --node https://graph-deploy.linea.build --ipfs https://graph-ipfs.linea.build sectafi/dex sub_main.yaml",
+    "deploy:linea": "graph deploy --studio secta-linea-exchange-v3"
   }
 }
