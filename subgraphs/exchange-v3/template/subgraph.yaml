@@ -10,7 +10,7 @@ dataSources:
     name: Factory
     network: linea
     source:
-      address: "0x9BD425a416A276C72a13c13bBd8145272680Cf07"
+      address: "0x9bd425a416a276c72a13c13bbd8145272680cf07"
       abi: Factory
       startBlock: 2389290
     mapping:
@@ -39,9 +39,9 @@ dataSources:
     name: NonfungiblePositionManager
     network: linea
     source:
-      address: "0x400F9ce4E9baD12501De831970C13e4aE99AC442"
+      address: "0x400f9ce4e9bad12501de831970c13e4ae99ac442"
       abi: NonfungiblePositionManager
-      startBlock: 2390823
+      startBlock: 2389296
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
