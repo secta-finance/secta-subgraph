@@ -1,6 +1,6 @@
 specVersion: 0.0.2
-description: PancakeSwap is a multi-chain decentralized exchange and automated market maker protocol.
-repository: https://github.com/pancakeswap/pancake-subgraph
+description: SectaFi is a decentralized exchange and automated market maker protocol on Linea.
+repository: https://github.com/secta-finance/secta-subgraph
 schema:
   file: ./schema.graphql
 features:
@@ -8,11 +8,11 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: bsc
+    network: linea
     source:
-      address: "0x0bfbcf9fa4f9c56b0f40a671ad40e0805a091865"
+      address: "0x9BD425a416A276C72a13c13bBd8145272680Cf07"
       abi: Factory
-      startBlock: 26956207
+      startBlock: 2389290
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -37,11 +37,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: bsc
+    network: linea
     source:
-      address: "0x46a15b0b27311cedf172ab29e4f4766fbe7f4364"
+      address: "0x400F9ce4E9baD12501De831970C13e4aE99AC442"
       abi: NonfungiblePositionManager
-      startBlock: 26931961
+      startBlock: 2390823
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: bsc
+    network: linea
     source:
       abi: Pool
     mapping:

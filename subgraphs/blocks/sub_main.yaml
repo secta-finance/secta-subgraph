@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: USDC-ERC20
-    network: linea-goerli
+    network: linea
     source:
-      address: "0xf56dc6695cF1f5c364eDEbC7Dc7077ac9B586068"
+      address: "0x176211869cA2b568f2A7D4EE941E073a821EE1ff"
       abi: Token
-      startBlock: 3172202
+      startBlock: 2388823
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
